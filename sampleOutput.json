@@ -1,0 +1,45 @@
+{
+    "status": "ok",
+    "totalResults": 2459,
+    "articles": [
+      {
+        "source": {
+          "id": null,
+          "name": "BBC News"
+        },
+        "author": "BBC Sport",
+        "title": "Spinner Ashwin retires from India duty",
+        "description": "India spinner Ravichandran Ashwin retires from international cricket at the age of 38.",
+        "url": "https://www.bbc.com/sport/cricket/articles/cy89jww8g7lo",
+        "urlToImage": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/eb7a/live/5c0f70d0-6139-11ee-ac8c-9d18dbc280ea.png",
+        "publishedAt": "2024-12-18T06:26:03Z",
+        "content": "How Wham! turned one song into a cultural phenomenon. VideoHow Wham! turned one song into a cultural phenomenon"
+      },
+      {
+        "source": {
+          "id": null,
+          "name": "BBC News"
+        },
+        "author": null,
+        "title": "Bumrah takes final-ball wicket after altercation",
+        "description": "Indian captain Jaspit Bumrah dismisses Usman Khawaja with the final ball of the day following an altercation with 19-year-old Austalian batter Sam Konstas on day one of the fifth Test at the Sydney Cricket Ground.",
+        "url": "https://www.bbc.com/sport/cricket/videos/c5ygwg8v277o",
+        "urlToImage": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/ef69/live/2bd238d0-c9ac-11ef-9fd6-0be88a764111.jpg",
+        "publishedAt": "2025-01-03T08:32:35Z",
+        "content": "The journalist, the manager, the fax machine and the hairdryer. Video, 00:02:55The journalist, the manager, the fax machine and the hairdryer"
+      },
+      {
+        "source": {
+          "id": null,
+          "name": "BBC News"
+        },
+        "author": null,
+        "title": "Lyon strikes to give Australia Test win",
+        "description": "Nathan Lyon traps India's Mohammed Siraj lbw to give Australia a 184-run win in the fourth Test and give the hosts a 2-1 lead in the series.",
+        "url": "https://www.bbc.com/sport/cricket/videos/c80v9nl7pdlo",
+        "urlToImage": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/d9f2/live/bcbb51f0-c679-11ef-aff0-072ce821b6ab.jpg",
+        "publishedAt": "2024-12-30T07:29:04Z",
+        "content": "Watch as Nathan Lyon traps India's Mohammed Siraj lbw to give Australia a 184-run win in the fourth Test at the Melbourne Cricket Ground and give the hosts a 2-1 lead going into the final match in Sy… [+89 chars]"
+      }
+    ]
+}
