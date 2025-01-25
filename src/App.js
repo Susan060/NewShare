@@ -1,20 +1,18 @@
 import "./App.css";
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import News from "./News";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 
-export class App extends Component {
-  pageSize = 10;
-  apikey="2cc22390140a40cead3a2799f4fd9fce"
-  state = {
-    progress: 0,
+const App =()=> {
+  const[progress,setprogress]=useState(0)
+  let pageSize = 10;
+  const apikey="2cc22390140a40cead3a2799f4fd9fce"
+ const  setProgress = (progress) => {
+    setprogress(progress);
   };
-  setProgress = (progress) => {
-    this.setState({ progress: progress });
-  };
-  render() {
+
     return (
       <div>
         <Router>
@@ -22,7 +20,7 @@ export class App extends Component {
           <LoadingBar
             height={3}
             color="#f11946"
-            progress={this.state.progress}
+            progress={progress}
           />
           <Routes>
             <Route
@@ -30,9 +28,9 @@ export class App extends Component {
               path="/"
               element={
                 <News
-                  setProgress= {this.setProgress} apikey={this.apikey}
+                  setProgress= {setProgress} apikey={apikey}
                   key="general"
-                  pageSize={this.pageSize}
+                  pageSize={pageSize}
                   country={"us"}
                   category={"general"}
                 />
@@ -43,9 +41,9 @@ export class App extends Component {
               path="/science"
               element={
                 <News
-                  setProgress= {this.setProgress} apikey={this.apikey}
+                  setProgress= {setProgress} apikey={apikey}
                   key="science"
-                  pageSize={this.pageSize}
+                  pageSize={pageSize}
                   country={"us"}
                   category={"science"}
                 />
@@ -56,9 +54,9 @@ export class App extends Component {
               path="/science"
               element={
                 <News
-                  setProgress= {this.setProgress} apikey={this.apikey}
+                  setProgress= {setProgress} apikey={apikey}
                   key="science"
-                  pageSize={this.pageSize}
+                  pageSize={pageSize}
                   country={"us"}
                   category={"science"}
                 />
@@ -69,9 +67,9 @@ export class App extends Component {
               path="/business"
               element={
                 <News
-                  setProgress= {this.setProgress} apikey={this.apikey}
+                  setProgress= {setProgress} apikey={apikey}
                   key="Business"
-                  pageSize={this.pageSize}
+                  pageSize={pageSize}
                   country={"us"}
                   category={"Business"}
                 />
@@ -82,9 +80,9 @@ export class App extends Component {
               path="/sports"
               element={
                 <News
-                  setProgress= {this.setProgress} apikey={this.apikey}
+                  setProgress= {setProgress} apikey={apikey}
                   key="Sports"
-                  pageSize={this.pageSize}
+                  pageSize={pageSize}
                   country={"us"}
                   category={"Sports"}
                 />
@@ -95,9 +93,9 @@ export class App extends Component {
               path="/health"
               element={
                 <News
-                  setProgress= {this.setProgress} apikey={this.apikey}
+                  setProgress= {setProgress} apikey={apikey}
                   key="Health"
-                  pageSize={this.pageSize}
+                  pageSize={pageSize}
                   country={"us"}
                   category={"Health"}
                 />
@@ -108,9 +106,9 @@ export class App extends Component {
               path="/general"
               element={
                 <News
-                  setProgress= {this.setProgress} apikey={this.apikey}
+                  setProgress= {setProgress} apikey={apikey}
                   key="General"
-                  pageSize={this.pageSize}
+                  pageSize={pageSize}
                   country={"us"}
                   category={"General"}
                 />
@@ -121,9 +119,9 @@ export class App extends Component {
               path="/entertainment"
               element={
                 <News
-                  setProgress= {this.setProgress} apikey={this.apikey}
+                  setProgress= {setProgress} apikey={apikey}
                   key="Entertainment"
-                  pageSize={this.pageSize}
+                  pageSize={pageSize}
                   country={"us"}
                   category={"Entertainment"}
                 />
@@ -134,9 +132,9 @@ export class App extends Component {
               path="/technology"
               element={
                 <News
-                  setProgress= {this.setProgress} apikey={this.apikey}
+                  setProgress= {setProgress} apikey={apikey}
                   key="Technology"
-                  pageSize={this.pageSize}
+                  pageSize={pageSize}
                   country={"us"}
                   category={"Technology"}
                 />
@@ -146,7 +144,6 @@ export class App extends Component {
         </Router>
       </div>
     );
-  }
 }
 
 export default App;
