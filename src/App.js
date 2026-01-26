@@ -10,6 +10,7 @@ const App =()=> {
   const[progress,setprogress]=useState(0)
   let pageSize = 10;
   const apikey="2cc22390140a40cead3a2799f4fd9fce"
+  
  const  setProgress = (progress) => {
     setprogress(progress);
   };
