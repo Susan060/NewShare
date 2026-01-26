@@ -5,6 +5,7 @@ import News from "./News";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 
+
 const App =()=> {
   const[progress,setprogress]=useState(0)
   let pageSize = 10;
