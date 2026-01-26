@@ -94,6 +94,7 @@ const News =(props)=> {
                 ))}
               </div>
             </div>
+            
           </InfiniteScroll>
         </center>
       </div>
